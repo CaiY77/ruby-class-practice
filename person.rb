@@ -1,11 +1,13 @@
 class Person
 # attr_reader :name, :age
 # attr_writer :name, :age
+
 attr_accessor :name, :age
 
   def initialize(name: "Jesus",age:)
     @name = name
     @age = age
+    @password =
   end
 
   def say_hi
@@ -14,7 +16,7 @@ attr_accessor :name, :age
   end
 
   private
-
+  
   def yikes
     puts "I'm private"
   end
